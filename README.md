@@ -6,7 +6,7 @@
 ---
 
 # Demostracion
-<img src="https://github.com/MarcoPaoletta/AnimationSubscribe/blob/master/README/Demostration.gif">
+<img width=640 heigth=360  src="https://github.com/MarcoPaoletta/AnimationSubscribe/blob/master/README/Demostration.gif">
 
 ---
 
