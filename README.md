@@ -1,4 +1,14 @@
+# Animation Subscribe
+* Proyecto de animacion para una imagen de suscribirse al canal con sonido incluido
+* Tiene una pantalla verde la cual se puede eliminar facilmente mediante un editor de video
+* Para reproducir la animacion hay que tocar la tecla **insert** y esperar 3 segundos
 
+---
+
+# Demostracion
+<img src="https://github.com/MarcoPaoletta/AnimationSubscribe/blob/master/README/Demostration.gif">
+
+---
 
 # Descargar Godot Engine e importar el proyecto
 
