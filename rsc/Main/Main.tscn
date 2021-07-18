@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/img.png" type="Texture" id=1]
+[ext_resource path="res://rsc/Main/Main.gd" type="Script" id=2]
+[ext_resource path="res://assets/Sound.wav" type="AudioStream" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Move"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8, 3, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1746.74, 141.258 ), Vector2( 978.739, 141.258 ), Vector2( 978.73, 141.25 ), Vector2( 1746.74, 141.258 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.28, 0.28 ), Vector2( 0.28, 0.28 ), Vector2( 0.32, 0.32 ) ]
+}
+
+[node name="img" type="Sprite"]
+position = Vector2( 1746.74, 141.258 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/Move = SubResource( 1 )
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
